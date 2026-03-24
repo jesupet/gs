@@ -1,0 +1,71 @@
+/* Etapas del proyecto */
+.linea-tiempo {
+    position: relative;
+}
+.linea-tiempo .row {
+    margin: 0px 10px;
+}
+.circulo-img {
+    width: 20px;
+    margin-bottom: 16px;
+}
+.circulo-img:last-child {
+    margin-bottom: 0px;
+}
+.linea-tiempo hr {
+    opacity: 1;
+    color: var(--green);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.etapas-desktop-wrap {
+    display: block;
+}
+
+.etapas-mobile-wrap {
+    display: none;
+}
+
+@media (max-width: 999.98px) {
+    .etapas-desktop-wrap {
+        display: none;
+    }
+
+    .etapas-mobile-wrap {
+        display: block;
+    }
+}
+@media (max-width: 999.98px) {
+    .etapas-mobile-timeline {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+        
+    /* Versión vertical: equivalente a girar la línea horizontal en 90 grados */
+    .etapa-mobile-line {
+        height: 30px;
+        width: 2px;
+        background-color: var(--green);
+    }
+        
+        .etapa-mobile-item {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 260px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        
+        .circulo-img {
+        width: 20px;
+        margin-bottom: 8px;
+        }
+ }

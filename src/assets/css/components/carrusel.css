@@ -1,0 +1,30 @@
+/* Carrusel plantas (solo mobile): autoplay, puntos azules, sin flechas */
+
+.plantas-carousel-mobile {
+  padding-bottom: 2.5rem;
+}
+
+.plantas-carousel-mobile__thumb {
+  position: relative;
+  display: inline-block;
+}
+
+.plantas-carousel-mobile__indicators {
+  margin-bottom: 0;
+  bottom: 0;
+}
+
+.plantas-carousel-mobile__indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--blue);
+  border: none;
+  opacity: 0.35;
+  margin: 0 6px;
+  box-sizing: border-box;
+}
+
+.plantas-carousel-mobile__indicators [data-bs-target].active {
+  opacity: 1;
+}

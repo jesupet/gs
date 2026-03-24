@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Inter";
+    src: url('../../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Source Serif 4";
+    src: url('../../fonts/Source_Serif_4/SourceSerif4-VariableFont_opsz\,wght.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Funnel Sans";
+    src: url('../../fonts/Funnel_Sans/FunnelSans-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /*Fonts*/
+  
+  :root {
+    --inter-font: 'Inter', sans-serif;
+    --source-serif-4-font: 'Source Serif 4', serif;
+    --funnel-sans-font: 'Funnel Sans', sans-serif;
+  } 
+  
+  /*Colors*/
+  
+  :root {
+    --grey: #D9D9D9;
+    --crudo: #F7F3F2;
+    --coral: #FF8980;
+    --black: #000;
+  }
+  
+  /*Responsive*/
+  
+  :root {
+    --phone-width: 576px; /* sm en BS */
+    --tablet-width: 768px; /*  md en BS */
+    --big-tablet-width: 992px; /*  lg en BS */
+    --desktop-width: 1200px; /*  xl en BS */
+  }
+  
+  hr {
+    border: 1px solid var(--black);
+    opacity: 0.59;
+  }
+  

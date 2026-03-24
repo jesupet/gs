@@ -1,0 +1,16 @@
+.navbar {
+  background-color: var(--crudo) !important;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+.nav-link {
+  transition: color 0.3s ease-in-out;
+  padding-right: 20px !important;
+  color: var(--black);
+}
+.nav-link:hover {
+  color: var(--coral);
+}

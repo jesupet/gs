@@ -1,0 +1,20 @@
+#plantaModal .modal-header, .modal-content {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom: none;
+}
+#plantaModal .modal-content {
+    background-color: var(--blue);
+    color: var(--white-sand);
+}
+
+/* Bootstrap usa un SVG/máscara en .btn-close: se "tiñe" con filter */
+#plantaModal .btn-close {
+    filter: invert(1) grayscale(1) brightness(1.2);
+    opacity: 1;
+}
+
+#plantaModal .btn-close:hover,
+#plantaModal .btn-close:focus {
+    opacity: 0.9;
+}
