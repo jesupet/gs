@@ -65,16 +65,32 @@
         </div>
       </div>
     </section>
+    <hr>
+    <section id="informe">
+      <div class="container informe-content">
+        <h2 class="white">Informe de Materialidad <span class="h2-bold white">2025</span></h2>
+        <ButtonComp 
+          buttonText="Descargar" 
+          btnColor="btn-primary" 
+        />
+        <p class="p-18 white uppercase edicion-text">4° edición</p>
+        <img src="@/assets/icons/plus_icon.svg" alt="plus icon" class="plus-icon">
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
 import videoPlaceholder from '@/assets/img/placeholder_video.png'
 import playImg from '@/assets/icons/play.png'
+import ButtonComp from '@/components/ButtonComp.vue'
 import { mapState } from 'vuex'
 
 export default {
   name: 'HomeView',
+  components: {
+    ButtonComp
+  },
   data() {
     return {
       playing: false,

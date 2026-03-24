@@ -13,8 +13,17 @@
   background: var(--coral);
   color: var(--black);
 }
+.btn-secondary {
+  background: none;
+  border: 1px solid var(--black);
+  color: var(--black);
+  border-radius: 0px;
+}
 .btn-primary:hover {
   background: none;
   border: 1px solid var(--coral);
   color: var(--coral);
+}
+footer .first-col {
+  border-right: 1px solid var(--black);
 }

@@ -126,3 +126,31 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+/* Informe */
+#informe {
+    padding: 24px 0px 40px;
+}
+.informe-content {
+    background-image: url('../../img/placeholder_video.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 60px 0px;
+    position: relative;
+}
+#informe h2 {
+    margin-bottom: 24px;
+}
+.edicion-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 24px;
+}
+.plus-icon {
+    position: absolute;
+   top: 0;
+    right: 0;
+}

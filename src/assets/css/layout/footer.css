@@ -1,0 +1,14 @@
+footer .container {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+footer h2 {
+    padding-bottom: 16px;
+}
+footer .linkedin-icon {
+    width: 40px;
+    height: 40px;
+}
+footer .first-col {
+    border-right: 1px solid var(--black);
+  }
