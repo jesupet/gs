@@ -8,6 +8,23 @@
   width: fit-content;
   height: fit-content;
   color: var(--black);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Quita el anillo azul de Bootstrap al hacer clic / foco con ratón */
+.btn:focus,
+.btn:focus-visible,
+.btn:active {
+  box-shadow: none !important;
+  outline: none;
+  background-color: transparent !important;
+  border-color: var(--coral) !important;
+}
+
+/* Indicador de foco solo con teclado (accesible, sin azul) */
+.btn:focus-visible {
+  outline: 2px solid var(--coral);
+  outline-offset: 2px;
 }
 .btn-primary {
   background: var(--coral);
@@ -24,6 +41,57 @@
   border: 1px solid var(--coral);
   color: var(--coral);
 }
-footer .first-col {
-  border-right: 1px solid var(--black);
+.btn-secondary:hover {
+  background: none;
+  border: 1px solid var(--coral);
+  color: var(--coral);
+}
+.btn-tertiary {
+  /* Usamos el mismo "fondo" para animar el relleno coral (derecha -> izquierda) */
+  background-image: linear-gradient(
+    to right,
+    var(--coral) 0%,
+    var(--coral) 50%,
+    var(--crudo) 50%,
+    var(--crudo) 100%
+  );
+  background-size: 200% 100%;
+  background-position: right bottom; /* inicialmente visible: CRUDO */
+  color: var(--black);
+  border: 0px solid transparent;
+  border-radius: 0px;
+  position: relative;
+  padding-right: 64px; /* reserva espacio para el "+" */
+  overflow: hidden;
+  transition: background-position 250ms ease, border-color 250ms ease, color 250ms ease;
+}
+.btn-tertiary:hover {
+  background-position: left bottom; /* relleno: CORAL (izquierda) */
+  color: var(--crudo);
+}
+
+/* "+" coral cuadrado a la derecha SOLO en botones .btn-tertiary */
+.btn.btn-tertiary::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  bottom: 0;
+  right: -1px;
+
+  /* cuadrado igual a la altura del botón */
+  aspect-ratio: 1 / 1;
+  height: 106%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url('../../icons/plus_coral.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  /* para que el clic pase al botón / link interno y ejecute la acción */
+  pointer-events: none;
+  z-index: 1;
 }

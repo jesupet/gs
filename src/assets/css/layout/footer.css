@@ -1,6 +1,5 @@
-footer .container {
-    padding-top: 40px;
-    padding-bottom: 60px;
+footer {
+    border-top: var(--border-black);
 }
 footer h2 {
     padding-bottom: 16px;
@@ -8,7 +7,30 @@ footer h2 {
 footer .linkedin-icon {
     width: 40px;
     height: 40px;
+    transition: all 0.3s ease-in-out;
+}
+footer .linkedin-icon:hover {
+    opacity: 0.8;
 }
 footer .first-col {
-    border-right: 1px solid var(--black);
-  }
+    border-right: var(--border-black);
+    padding: 40px 0px;
+}
+footer .second-col, footer .third-col {
+    border-right: var(--border-black);
+    padding: 40px 24px;
+}
+.fourth-col {
+    border-right: var(--border-black);
+    padding: 0px 24px;
+}
+.fifth-col {
+    padding: 40px 24px;
+}
+footer p a {
+    transition: all 0.3s ease-in-out;
+}
+footer p a:hover {
+    color: var(--coral);
+    text-decoration: underline;
+}

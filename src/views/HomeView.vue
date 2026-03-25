@@ -65,7 +65,6 @@
         </div>
       </div>
     </section>
-    <hr>
     <section id="informe">
       <div class="container informe-content">
         <h2 class="white">Informe de Materialidad <span class="h2-bold white">2025</span></h2>
