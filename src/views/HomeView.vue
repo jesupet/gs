@@ -1,12 +1,12 @@
 <template>
   <div class="home">
     <section id="hero">
-      <div class="container text-center">
+      <div class="container text-center d-lg-block d-none">
         <p class="pre-title">seguimos evolucionando</p>
         <h1>Fuimos pioneros en sostenibilidad. <br>Hoy abrimos un <span class="h1-bold">nuevo capítulo.</span></h1>
         <div class="d-flex justify-content-center"><hr></div>
       </div>
-      <div class="container">
+      <div class="container px-lg-0 px-3 ">
         <div class="hero-video">
           <div v-if="!playing" class="hero-video__poster">
             <img
@@ -16,7 +16,7 @@
               width="1280"
               height="720"
             />
-            <div class="hero-video__text">
+            <div class="hero-video__text d-lg-block d-none">
               <p class="p-20 semi-bold white">Video Lanzamiento</p>
               <p class="p-20 light white">GS 2026</p>
             </div>
@@ -66,14 +66,17 @@
       </div>
     </section>
     <section id="informe">
-      <div class="container informe-content">
-        <h2 class="white">Informe de Materialidad <span class="h2-bold white">2025</span></h2>
-        <ButtonComp 
-          buttonText="Descargar" 
-          btnColor="btn-primary" 
-        />
-        <p class="p-18 white uppercase edicion-text">4° edición</p>
-        <img src="@/assets/icons/plus_icon.svg" alt="plus icon" class="plus-icon">
+      <div class="container">
+        <div class="informe-content">
+          <h2 class="white">Informe de Materialidad <span class="h2-bold white">2025</span></h2>
+          <ButtonComp 
+            buttonText="Descargar" 
+            btnColor="btn-primary" 
+          />
+          <p class="p-18 white uppercase edicion-text">4° edición</p>
+          <a href=""><img src="@/assets/icons/plus_icon.svg" alt="plus icon" class="plus-icon"></a>
+          </div>
+        
       </div>
     </section>
   </div>

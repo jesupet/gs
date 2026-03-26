@@ -2,7 +2,7 @@
   font-family: var(--inter-font);
   font-size: 16px;
   border: 1px solid transparent;
-  border-radius: 8px;
+  border-radius: 0px;
   padding: 8px 30px;
   cursor: pointer;
   width: fit-content;
@@ -42,9 +42,9 @@
   color: var(--coral);
 }
 .btn-secondary:hover {
-  background: none;
+  background-color: var(--coral);
   border: 1px solid var(--coral);
-  color: var(--coral);
+  color: var(--black);
 }
 .btn-tertiary {
   /* Usamos el mismo "fondo" para animar el relleno coral (derecha -> izquierda) */

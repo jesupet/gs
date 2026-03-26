@@ -3,6 +3,10 @@ footer {
 }
 footer h2 {
     padding-bottom: 16px;
+    font-size: 40px;
+    @media (max-width: 1000px) {
+        font-size: 32px;
+    }
 }
 footer .linkedin-icon {
     width: 40px;
@@ -15,17 +19,41 @@ footer .linkedin-icon:hover {
 footer .first-col {
     border-right: var(--border-black);
     padding: 40px 0px;
+    @media (max-width: 1000px) {
+        border-right: none;
+        
+    }
 }
 footer .second-col, footer .third-col {
     border-right: var(--border-black);
     padding: 40px 24px;
+    @media (max-width: 1000px) {
+        border-right: none;
+      
+    }
+}
+footer .second-col {
+    @media (max-width: 1000px) {
+        border-right: var(--border-black);
+        padding: 40px 0px;
+    }
 }
 .fourth-col {
     border-right: var(--border-black);
     padding: 0px 24px;
+    @media (max-width: 1000px) {
+        padding: 0px;
+        img {
+            transform: rotate(90deg);
+            width: 150px;
+        }
+    }
 }
 .fifth-col {
-    padding: 40px 24px;
+    padding: 40px 32px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
 }
 footer p a {
     transition: all 0.3s ease-in-out;
@@ -33,4 +61,27 @@ footer p a {
 footer p a:hover {
     color: var(--coral);
     text-decoration: underline;
+}
+
+/* Mobile: border-bottom full width, manteniendo padding del contenido */
+@media (max-width: 1000px) {
+    footer .first-col,
+    footer .second-col,
+    footer .third-col {
+        position: relative;
+    }
+
+    /* Dibuja la línea a 100vw sin tocar el padding */
+    footer .first-col::after,
+    footer .second-col::after,
+    footer .third-col::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        width: 100vw;
+        border-bottom: var(--border-black);
+        pointer-events: none;
+    }
 }

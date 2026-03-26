@@ -1,13 +1,14 @@
 #hero h1 {
     margin-bottom: 36px;
 }
-#hero .pre-tiltle {
-    margin-bottom: 18px;
+#hero .pre-title {
+    margin-bottom: 24px;
 }
 #hero hr {
     border: 0.8px solid var(--black);
     opacity: 0.59;
     width: 73px;
+    margin-bottom: 32px;
 }
 
 /*Video*/
@@ -18,6 +19,11 @@
     margin-inline: auto;
     aspect-ratio: 16 / 9;
     margin-bottom: 60px;
+    @media (max-width: 1000px) {
+        aspect-ratio: 6 / 5;
+        margin-top: 24px;
+        margin-bottom: 42px;
+    }
 }
 .hero-video__poster {
     position: relative;
@@ -86,11 +92,17 @@
 
 #servicios {
     padding: 60px 0px;
+    @media (max-width: 1000px) {
+        padding: 0px 0px;
+    }
 }
 
 /* Desktop: título 1/3; móvil: título 100% arriba de la grilla */
 .servicios-layout__title {
     margin-bottom: 32px;
+    @media (max-width: 1000px) {
+        margin-bottom: 16px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -134,19 +146,26 @@
     justify-content: space-between;
 }
 
+
 /* Informe */
 #informe {
     padding: 40px 0px;
     border-top: var(--border-black);
+    @media (max-width: 1000px) {
+       border-top: none;
+    }
 }
 .informe-content {
     background-image: url('../../img/banner_informe.png');
     background-size: cover;
-    background-position: center;
+    background-position: 30% center;
     background-repeat: no-repeat;
     text-align: center;
     padding: 60px 0px;
     position: relative;
+    @media (max-width: 1000px) {
+        padding: 80px;
+    }
 }
 #informe h2 {
     margin-bottom: 24px;

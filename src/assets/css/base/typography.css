@@ -1,6 +1,6 @@
 h1, h2, h3, h4 {
   font-family: var(--inter-font);
-  font-weight: 400;
+  font-weight: 300;
 }
 h1 {
   font-size: 42px;
@@ -19,14 +19,14 @@ h3 {
   text-transform: uppercase;
 }
 .h1-bold {
-  font-family: var(--source-serif-4-font);
-  font-weight: 600;
-  font-size: 47px;
+  font-family: var(--stix-two-text-font);
+  font-weight: 400;
+  font-size: 45px;
 }
 .h2-bold {
-  font-family: var(--source-serif-4-font);
-  font-weight: 600;
-  font-size: 45px;
+  font-family: var(--stix-two-text-font);
+  font-weight: 400;
+  font-size: 42px;
 }
 
 
@@ -55,37 +55,46 @@ h3 {
     font-size: 40px;
   }
   h2 {
-    font-size: 32px;
+    font-size: 22px;
+    line-height: 28px;
   }
   h3 {
-    font-size: 24px;
+    font-size: 20px;
+    line-height: 24px;
   }
   h4 {
     font-size: 16px;
   }
-  .subtitle-1 {
-    font-size: 16px;
+  .h1-bold {
+    font-family: var(--stix-two-text-font);
+    font-weight: 400;
+    font-size: 42px;
+  }
+  .h2-bold {
+    font-family: var(--stix-two-text-font);
+    font-weight: 400;
+    font-size: 24px;
   }
   .p-20 {
     font-size: 16px; 
-    font-family: var(--overpass-font);
-    font-weight: 400;
+    font-weight: 300;
+  }
+  .p-18 {
+    font-size: 12px;
   }
   .p-16 {
     font-size: 14px;
-    font-family: var(--overpass-font);
-    font-weight: 400;
+    font-weight: 300;
+    line-height: 20px;
   }
   .p-14 {
     font-size: 12px;
-    font-family: var(--overpass-font);
-    font-weight: 400;
+    font-weight: 300;
   
   }
   .p-12 {
     font-size: 10px;
-    font-family: var(--overpass-font);
-    font-weight: 400;
+    font-weight: 300;
   
   }
 }

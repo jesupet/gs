@@ -16,6 +16,12 @@
     font-style: normal;
     font-display: swap;
   }
+  @font-face {
+    font-family: "STIX Two Text";
+    src: url('../../fonts/STIX_Two_Text/STIXTwoText-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+  }
   
   /*Fonts*/
   
@@ -23,6 +29,7 @@
     --inter-font: 'Inter', sans-serif;
     --source-serif-4-font: 'Source Serif 4', serif;
     --funnel-sans-font: 'Funnel Sans', sans-serif;
+    --stix-two-text-font: 'STIX Two Text', serif;
   } 
   
   /*Colors*/
