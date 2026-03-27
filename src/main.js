@@ -5,6 +5,8 @@ import store from './store'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 import './assets/css/main.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-
-createApp(App).use(store).use(router).mount('#app')
+AOS.init();
+createApp(App).use(store).use(router).use(AOS).mount('#app')

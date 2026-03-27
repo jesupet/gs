@@ -1,5 +1,13 @@
 <template>
   <div class="home">
+    <div v-if="showHomeIntro" class="home-intro" aria-live="polite" aria-busy="true">
+      <div class="home-intro__content">
+        <img :src="logoGs" alt="GS" class="home-intro__logo" />
+        <div class="spinner-border text-light home-intro__spinner" role="status" aria-label="Cargando">
+          <span class="visually-hidden">Cargando...</span>
+        </div>
+      </div>
+    </div>
     <section id="hero">
       <div class="container text-center d-lg-block d-none">
         <p class="pre-title">seguimos evolucionando</p>
@@ -48,15 +56,15 @@
       <div class="container">
         <div class="row servicios-layout">
           <div class="col-12 col-lg-4 servicios-layout__title">
-            <h2>Nuestros <span class="h2-bold">servicios</span></h2>
+            <h2>Principales <span class="h2-bold">servicios</span></h2>
           </div>
           <div class="col-12 col-lg-8 servicios-layout__grid-wrap">
             <div class="servicios-grid">
-              <div v-for="service in services" :key="service.name" class="service-card">
+              <div v-for="service in services" :key="service.name" class="service-card" data-aos="fade-up">
                 <div>
                   <img src="@/assets/icons/flag.svg" alt="bandera" class="service-icon">
                   <h3>{{ service.name }}</h3>
-                  <p class="p-16">{{ service.description }}</p>
+                  <p class="p-14">{{ service.description }}</p>
                 </div>
                 <hr>
               </div>
@@ -85,6 +93,7 @@
 <script>
 import videoPlaceholder from '@/assets/img/placeholder_video.png'
 import playImg from '@/assets/icons/play.png'
+import logoGs from '@/assets/logos/logotipo_navbar.svg'
 import ButtonComp from '@/components/ButtonComp.vue'
 import { mapState } from 'vuex'
 
@@ -95,11 +104,13 @@ export default {
   },
   data() {
     return {
+      showHomeIntro: false,
       playing: false,
       /** ID del video (parte de youtube.com/watch?v=...) */
       youtubeVideoId: 'M7lc1UVf-VE',
       videoPlaceholder,
       playImg,
+      logoGs,
     }
   },
   computed: {
@@ -107,6 +118,20 @@ export default {
     embedUrl() {
       return `https://www.youtube.com/embed/${this.youtubeVideoId}?autoplay=1&rel=0`
     },
+  },
+  mounted() {
+    const key = 'gs_home_intro_shown'
+    const alreadyShown = sessionStorage.getItem(key) === '1'
+    if (alreadyShown) return
+
+    this.showHomeIntro = true
+    document.body.classList.add('no-scroll')
+
+    window.setTimeout(() => {
+      this.showHomeIntro = false
+      document.body.classList.remove('no-scroll')
+      sessionStorage.setItem(key, '1')
+    }, 2000)
   },
 }
 </script>

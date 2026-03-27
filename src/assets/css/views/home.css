@@ -1,6 +1,40 @@
 #hero h1 {
     margin-bottom: 36px;
 }
+
+/* Intro loader (solo primera visita al Home) */
+.no-scroll {
+    overflow: hidden;
+}
+
+.home-intro {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: var(--coral);
+    display: grid;
+    place-items: center;
+}
+
+.home-intro__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+}
+
+.home-intro__logo {
+    width: min(260px, 70vw);
+    height: auto;
+    padding-bottom: 70px;
+}
+
+.home-intro__spinner {
+    width: 48px;
+    height: 48px;
+    border-width: 2px;
+}
 #hero .pre-title {
     margin-bottom: 24px;
 }

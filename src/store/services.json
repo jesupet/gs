@@ -1,34 +1,26 @@
 [
     {
         "name": "Consultoría Estratégica y gestión de proyectos",
-        "description": "Fortalecemos estrategias de negocio integrando la sostenibilidad como ventaja competitiva."
-    },
-    {
-        "name": "Gestión comunitaria y valor económico local",
-        "description": "Diseñamos y gestionamos relaciones territoriales con foco en confianza y transparencia."
+        "description": "Fortalecemos estrategias de negocio integrando la sostenibilidad como ventaja competitiva. Guiamos la toma de decisiones, brindamos foco y fortalecemos capacidades internas, conectando con el negocio y cultura."
     },
     {
         "name": "Reporting, estándares y trazabilidad",
-        "description": "Ordenamos datos, criterios y procesos para reportar con trazabilidad y consistencia."
-    },
-    {
-        "name": "Diseño e implementación de proyectos",
-        "description": "Convertimos diagnósticos en iniciativas concretas, con gobernanza y medición."
-    },
-    {
-        "name": "Integridad y transparencia",
-        "description": "Fortalecemos la coherencia entre lo que la organización declara y lo que hace."
-    },
-    {
-        "name": "Data & Analytics",
-        "description": "Transformamos datos en información accionable para anticipar riesgos, priorizar decisiones y monitorear resultados."
+        "description": "Ordenamos datos, criterios y procesos para reportar con trazabilidad y consistencia, cumpliendo exigencias sin perder foco estratégico."
     },
     {
         "name": "Ingeniería y stakeholders en grandes proyectos de inversión",
-        "description": "Aseguramos viabilidad y legitimidad incorporando los riesgos socioambientales y de asuntos públicos."
+        "description": "Aseguramos viabilidad y legitimidad incorporando los riesgos socioambientales y de asuntos públicos desde el diseño del proyecto, con estrategia, evidencia territorial y participación temprana."
+    },
+    {
+        "name": "Gestión comunitaria y valor económico local",
+        "description": "Diseñamos y gestionamos relaciones territoriales con foco en confianza, transparencia, integrando prevención de conflictos e impacto positivo."
+    },
+    {
+        "name": "Diseño e implementación de proyectos",
+        "description": "Convertimos diagnósticos en iniciativas concretas, con gobernanza y medición para asegurar efectividad y sostenibilidad en el tiempo."
     },
     {
         "name": "Tecnología y desarrollo de software",
-        "description": "Contamos con una serie de Saas gracias a la experiencia de más de 20 años para el desarrollo de soluciones."
+        "description": "No partimos del código, sino de la solución del problema del cliente. Ofrecemos consultoría y desarrollos a la medida y accionables. Tenemos una serie de Saas gracias a la experiencia de más de 20 años para el desarrollo de soluciones."
     }
 ]
