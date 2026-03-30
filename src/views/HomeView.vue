@@ -1,13 +1,15 @@
 <template>
   <div class="home">
-    <div v-if="showHomeIntro" class="home-intro" aria-live="polite" aria-busy="true">
-      <div class="home-intro__content">
-        <img :src="logoGs" alt="GS" class="home-intro__logo" />
-        <div class="spinner-border text-light home-intro__spinner" role="status" aria-label="Cargando">
-          <span class="visually-hidden">Cargando...</span>
+    <transition name="home-intro-fade">
+      <div v-if="showHomeIntro" class="home-intro" aria-live="polite" aria-busy="true">
+        <div class="home-intro__content">
+          <img :src="logoGs" alt="GS" class="home-intro__logo" />
+          <div class="spinner-border text-light home-intro__spinner" role="status" aria-label="Cargando">
+            <span class="visually-hidden">Cargando...</span>
+          </div>
         </div>
       </div>
-    </div>
+    </transition>
     <section id="hero">
       <div class="container text-center d-lg-block d-none">
         <p class="pre-title">seguimos evolucionando</p>

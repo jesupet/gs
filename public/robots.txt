@@ -1,0 +1,67 @@
+# ==========================================
+# BUSCADORES TRADICIONALES
+# ==========================================
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# ==========================================
+# RASTREADORES DE IA
+# ==========================================
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# OpenAI (ChatGPT)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Google AI (Gemini / AI Overviews)
+User-agent: Google-Extended
+Allow: /
+
+# Apple
+User-agent: Applebot-Extended
+Allow: /
+
+# Common Crawl (base de datos usada para entrenar muchos modelos)
+User-agent: CCBot
+Allow: /
+
+# ==========================================
+# REGLAS GENERALES
+# ==========================================
+
+User-agent: *
+Allow: /
+
+# Bloquear zonas que no necesitas indexar
+Disallow: /admin/
+Disallow: /login/
+Disallow: /wp-admin/
+Disallow: /checkout/
+Disallow: /cart/
+
+# ==========================================
+# SITEMAP
+# ==========================================
+
+Sitemap: https://gs.cl/sitemap.xml

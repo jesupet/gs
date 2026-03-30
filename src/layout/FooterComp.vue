@@ -5,7 +5,12 @@
                 <div class="col-lg-4 col-12 first-col">
                     <h2 class="light">Sigamos en contacto</h2>
                     <div class="d-flex gap-2">
-                        <ButtonComp buttonText="Contacto" btnColor="btn-secondary" />
+                        <ButtonComp 
+                            buttonText="Contacto" 
+                            btnColor="btn-secondary" 
+                            :displayLink="true"
+                            :hashTag="'/contacto'"
+                        />
                         <a href="https://www.linkedin.com/company/gestionsocial/" target="_blank"><img src="@/assets/icons/linkedin_icon.svg" alt="icono linkedin" class="linkedin-icon"></a>
                     </div>
                 </div>
